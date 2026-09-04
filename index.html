@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pachipala Venkata Vyshnavi | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Core External Font Awesome Vector Icon Library CDN -->
     <link rel="stylesheet" href="https://cloudflare.com">
+    <!-- Local presentation stylesheet linking rule -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
+
+    <!-- STICKY HEADER NAVIGATION BAR -->
+    <nav class="reveal-fadein">
         <div class="nav-container">
             <a href="#" class="logo">VV<span>.dev</span></a>
             <ul class="nav-links">
@@ -21,146 +25,280 @@
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="hero-content">
+    <!-- SECTION 1: HERO DISPLAY (SPLIT COLUMN LAYOUT) -->
+    <header class="hero section-scroll-view">
+    <div class="hero-container">
+        
+        <!-- Left Column Context -->
+        <div class="hero-left">
             <h3>Hello, I am</h3>
-            <h1>Pachipala Venkata Vyshnavi</h1>
+            <h1>Pachipala <span class="accent-text">Venkata Vyshnavi</span></h1>
             <h2>Aspiring Software Developer | Full Stack (MERN) | AI & ML</h2>
             <p>Final-year B.Tech CSE student passionate about building scalable web applications and AI-powered software solutions.</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn">View My Work</a>
-                <a href="#contact" class="btn btn-outline">Let's Talk</a>
+             <div class="hero-actions-container" style="display: flex; align-items: center; gap: 1.5rem; margin-top: 2rem; flex-wrap: wrap;">
+                <!-- RESTORED: Your original premium primary work toggle button -->
+                <a href="#projects" class="btn">View My Work <i class="fas fa-arrow-right" style="margin-left: 0.5rem; font-size: 0.9rem;"></i></a>
+                
+                <!-- RESTORED: Your original elegant direct web-mail contact button -->
+                <a href="https://google.com" target="_blank" class="btn btn-outline">Let's Talk</a>
+                
+                <!-- Your clean inline interactive social shortcut badge array -->
+                <div class="social-icons" style="display: flex; gap: 0.8rem; margin: 0;">
+                    <a href="https://github.com" target="_blank" class="social-btn-glossy" title="GitHub Profile">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: block; margin: auto;"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="social-btn-glossy" title="LinkedIn Profile">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: block; margin: auto;"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="https://google.com" target="_blank" class="social-btn-glossy" title="Email Me">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: block; margin: auto;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </a>
+                </div>
             </div>
-            <div class="social-icons">
-                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="mailto:21057cm036@gmail.com"><i class="fas fa-envelope"></i></a>
+            
+                    <i class="fas fa-download" style="margin-left: 0.5rem; font-size: 0.85rem;"></i>
+                </a>
+                
+                <div class="social-icons" style="display: flex; gap: 0.8rem; margin: 0;">
+                    <a href="https://github.com" target="_blank" class="social-btn-glossy" title="GitHub Profile">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: block; margin: auto;"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="social-btn-glossy" title="LinkedIn Profile">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: block; margin: auto;"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="https://google.com" target="_blank" class="social-btn-glossy" title="Email Me">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: block; margin: auto;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </a>
+                </div>
             </div>
         </div>
-    </header>
+        
+        <!-- Right Column Profile Picture Frame -->
+        <div class="hero-right">
+           <div class="profile-frame">
+            <img src="profile.jpeg" alt="Vyshnavi Profile Picture" class="profile-img">
+           </div>
+        </div>
 
-    <section id="about" class="about">
+    </div>
+</header>
+                        
+
+    <!-- SECTION 2: ABOUT ME & EDUCATION GRID -->
+    <section id="about" class="about section-scroll-view">
         <h2 class="section-title">About Me</h2>
-        <div class="about-grid">
-            <div class="about-text">
-                <p>I am a highly motivated Computer Science and Engineering student from Andhra Pradesh with comprehensive, hands-on architectural experience in Full Stack Development, AI/ML, and Cloud platforms.</p>
-                <div class="education-timeline">
-                    <div class="edu-item">
-                        <i class="fas fa-graduation-cap"></i>
+        <div class="about-container">
+            <!-- Left Info Panel -->
+            <div class="about-text-content">
+                <p class="about-lead">
+                    I am a highly motivated Computer Science and Engineering student from Andhra Pradesh with comprehensive, hands-on architectural experience in Full Stack Development, AI/ML, and Cloud platforms.
+                </p>
+                <p class="about-subtext">
+                    Passionate about solving real-world challenges through clean, maintainable code and robust algorithmic engineering. I thrive in collaborative environments and am always eager to learn modern frameworks.
+                </p>
+            </div>
+            
+            <!-- Right Timeline Cards Panel -->
+            <div class="education-timeline">
+                <div class="edu-item animate-delay-1">
+                    <div class="edu-header">
+                        <i class="fas fa-graduation-cap edu-icon"></i>
                         <h4>B.Tech in Computer Science & Engineering</h4>
-                        <p>Kandula Lakshumma Memorial College of Engineering for Women</p>
-                        <span>CGPA: 8.1 | Expected Graduation: 2027</span>
                     </div>
-                    <div class="edu-item">
-                        <i class="fas fa-certificate"></i>
+                    <p class="edu-school">Kandula Lakshumma Memorial College of Engineering for Women</p>
+                    <div class="edu-meta">
+                        <span class="edu-cgpa">CGPA: 8.1</span>
+                        <span class="edu-date">Expected Graduation: 2027</span>
+                    </div>
+                </div>
+
+                <div class="edu-item animate-delay-2">
+                    <div class="edu-header">
+                        <i class="fas fa-certificate edu-icon"></i>
                         <h4>Diploma in Computer Engineering</h4>
-                        <p>Government Polytechnic for Women, Kadapa</p>
-                        <span>CGPA: 7.9 | Graduated: 2024</span>
+                    </div>
+                    <p class="edu-school">Government Polytechnic for Women, Kadapa</p>
+                    <div class="edu-meta">
+                        <span class="edu-cgpa">CGPA: 7.9</span>
+                        <span class="edu-date">Graduated: 2024</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <section id="skills" class="skills">
+    <!-- SECTION 3: TECHNICAL EXPERTISE PANEL -->
+    <section id="skills" class="skills section-scroll-view">
         <h2 class="section-title">Technical Expertise</h2>
         <div class="skills-container">
-            <div class="skill-category">
-                <h3><i class="fas fa-code"></i> Languages & Databases</h3>
+            <div class="skill-category animate-delay-1">
+                <h3><i class="fas fa-terminal"></i> Languages & Databases</h3>
                 <div class="tags">
-                    <span>C</span> <span>Python</span> <span>Java</span> <span>JavaScript</span> <span>SQL</span> <span>MongoDB</span> <span>MySQL</span>
+                    <span>C</span> <span>Python</span> <span>Java</span> 
+                    <span>JavaScript</span> <span>SQL</span> <span>MongoDB</span> <span>MySQL</span>
                 </div>
             </div>
-            <div class="skill-category">
+
+            <div class="skill-category animate-delay-2">
                 <h3><i class="fas fa-laptop-code"></i> Web Development</h3>
                 <div class="tags">
-                    <span>HTML5</span> <span>CSS3</span> <span>React.js</span> <span>Node.js</span> <span>Express.js</span> <span>REST APIs</span>
+                    <span>HTML5</span> <span>CSS3</span> <span>React.js</span> 
+                    <span>Node.js</span> <span>Express.js</span> <span>REST APIs</span>
                 </div>
             </div>
-            <div class="skill-category">
+
+            <div class="skill-category animate-delay-3">
                 <h3><i class="fas fa-brain"></i> AI / ML & Cloud</h3>
                 <div class="tags">
-                    <span>Machine Learning</span> <span>Generative AI</span> <span>Prompt Engineering</span> <span>Vertex AI</span> <span>Azure</span> <span>AWS Fundamentals</span>
+                    <span>Machine Learning</span> <span>Generative AI</span> 
+                    <span>Prompt Engineering</span> <span>Vertex AI</span> 
+                    <span>Azure</span> <span>AWS Fundamentals</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="experience" class="experience">
-        <h2 class="section-title">Experience</h2>
-        <div class="timeline">
-            <div class="timeline-item">
+    <!-- SECTION 4: PROFESSIONAL HISTORY TIMELINE -->
+    <section id="experience" class="experience section-scroll-view">
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="timeline-container">
+            <div class="timeline-line"></div>
+            
+            <div class="timeline-item animate-delay-1">
                 <div class="time-dot"></div>
-                <span class="time-date">June 2026 - July 2026</span>
-                <h3>Full Stack MERN Developer Intern</h3>
-                <h4>SmartBridge</h4>
-                <p>Architected full-stack workflows using React.js, Node.js, Express.js, and MongoDB. Constructed optimized REST APIs to efficiently handle server side request routing.</p>
+                <div class="timeline-card">
+                    <span class="time-date"><i class="far fa-calendar-alt"></i> June 2026 - July 2026</span>
+                    <h3>Full Stack MERN Developer Intern</h3>
+                    <h4 class="company-name">SmartBridge</h4>
+                    <p>Architected full-stack workflows using React.js, Node.js, Express.js, and MongoDB. Constructed optimized REST APIs to efficiently handle server side request routing.</p>
+                </div>
             </div>
-            <div class="timeline-item">
+
+            <div class="timeline-item animate-delay-2">
                 <div class="time-dot"></div>
-                <span class="time-date">June 2026 - July 2026</span>
-                <h3>AI & Machine Learning Intern</h3>
-                <h4>SmartBridge</h4>
-                <p>Explored algorithmic logic, supervised predictive methodologies, and data pipelines to translate environmental matrices into automated engines.</p>
+                <div class="timeline-card">
+                    <span class="time-date"><i class="far fa-calendar-alt"></i> June 2026 - July 2026</span>
+                    <h3>AI & Machine Learning Intern</h3>
+                    <h4 class="company-name">SmartBridge</h4>
+                    <p>Explored algorithmic logic, supervised predictive methodologies, and data pipelines to translate environmental matrices into automated engines.</p>
+                </div>
             </div>
-            <div class="timeline-item">
+
+            <div class="timeline-item animate-delay-3">
                 <div class="time-dot"></div>
-                <span class="time-date">May 2026 - June 2026</span>
-                <h3>Web Development Intern</h3>
-                <h4>Trekverse</h4>
-                <p>Designed front-end layouts and clean user interactions, implementing fluid semantic components to ensure reliable multi-device performance.</p>
+                <div class="timeline-card">
+                    <span class="time-date"><i class="far fa-calendar-alt"></i> May 2026 - June 2026</span>
+                    <h3>Web Development Intern</h3>
+                    <h4 class="company-name">Trekverse</h4>
+                    <p>Designed front-end layouts and clean user interactions, implementing fluid semantic components to ensure reliable multi-device performance.</p>
+                </div>
             </div>
-            <div class="timeline-item">
+
+            <div class="timeline-item animate-delay-4">
                 <div class="time-dot"></div>
-                <span class="time-date">Dec 2023 - May 2024</span>
-                <h3>Web Development Intern</h3>
-                <h4>Codeon Technologies Pvt. Ltd</h4>
-                <p>Spent 6 months building practical JavaScript components, writing modular application logic, and evaluating cloud integration protocols.</p>
+                <div class="timeline-card">
+                    <span class="time-date"><i class="far fa-calendar-alt"></i> Dec 2023 - May 2024</span>
+                    <h3>UI/UX, Cloud & Web Development Intern</h3>
+                    <h4 class="company-name">Codeon Technologies Pvt. Ltd</h4>
+                    <p>Designed intuitive UI/UX components for a food delivery application and developed practical web application replicas using JavaScript. Deployed and implemented Azure Virtual Machines, evaluated AWS server architectures, and mastered core cloud computing fundamentals.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="projects">
+    <!-- SECTION 5: FEATURED PROJECTS GRID -->
+    <section id="projects" class="projects section-scroll-view">
         <h2 class="section-title">Featured Projects</h2>
         <div class="projects-grid">
-            <div class="project-card">
+            
+            <div class="project-card animate-delay-1">
                 <div class="project-info">
-                    <h3>Online Complaint Registration System</h3>
-                    <p class="tech-stack">React.js • Node.js • Express.js • MongoDB</p>
+                    <div class="project-header">
+                        <i class="far fa-folder project-folder-icon"></i>
+                        <h3>Online Complaint Registration System</h3>
+                    </div>
+                    <div class="tech-badges">
+                        <span>React.js</span> <span>Node.js</span> <span>Express.js</span> <span>MongoDB</span>
+                    </div>
                     <p>A full-stack, secure platform engineered to streamline submitting, tracking, and managing public complaints, integrating automated routing and secure real-time state persistence.</p>
                     <div class="project-links">
-                        <a href="https://github.com/ONLINE-COMPLAINT-REGISTRATION" target="_blank" class="btn btn-sm"><i class="fab fa-github"></i> Source Code</a>
+                        <a href="https://github.com/502-VenkataVyshnaviPachipala/ONLINE-COMPLAINT-REGISTRATION" target="_blank" class="btn btn-sm">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="project-card">
+
+            <div class="project-card animate-delay-2">
                 <div class="project-info">
-                    <h3>OptiCrop Optimization Engine</h3>
-                    <p class="tech-stack">Python • Flask • Machine Learning • Scikit-Learn</p>
+                    <div class="project-header">
+                        <i class="far fa-folder project-folder-icon"></i>
+                        <h3>OptiCrop Optimization Engine</h3>
+                    </div>
+                    <div class="tech-badges">
+                        <span>Python</span> <span>Flask</span> <span>Machine Learning</span> <span>Scikit-Learn</span>
+                    </div>
                     <p>An end-to-end data-driven agricultural production engine that analyzes tabular soil variables (N, P, K) and macro climatic parameters to output predictive high-yield crop recommendations.</p>
                     <div class="project-links">
-                        <a href="https://github.com" target="_blank" class="btn btn-sm"><i class="fab fa-github"></i> Source Code</a>
+                        <a href="https://github.com/502-VenkataVyshnaviP/OptiCrop" target="_blank" class="btn btn-sm">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
-    <section id="contact" class="contact">
+    <!-- SECTION 6: CONTACT GRID PORTAL -->
+    <section id="contact" class="contact section-scroll-view">
         <h2 class="section-title">Get In Touch</h2>
-        <div class="contact-card">
-            <p>I am looking for global opportunities as an entry-level Software Developer or Full-Stack/ML Engineer.</p>
-            <div class="contact-details">
-                <p><i class="fas fa-map-marker-alt"></i> Andhra Pradesh, India</p>
-                <p><i class="fas fa-envelope"></i> 21057cm036@gmail.com</p>
-                <p><i class="fas fa-phone-alt"></i> +91 6304119748</p>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Let's Create Something Great!</h3>
+                <p>I am looking for global opportunities as an entry-level Software Developer, Full-Stack Developer, or AI/ML Engineer. Drop a message to discuss roles or projects.</p>
+                <div class="availability-badge">
+                    <span class="pulse-dot"></span> Available for Opportunities
+                </div>
             </div>
-            <a href="mailto:21057cm036@gmail.com" class="btn">Send an Email</a>
+
+            <div class="contact-cards-grid">
+                <a href="https://google.com" target="_blank" class="contact-card-box animate-delay-1">
+                    <div class="icon-wrapper icon-mail">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </div>
+                    <div class="contact-card-text">
+                        <h4>Email Me</h4>
+                        <p>21057cm036@gmail.com</p>
+                    </div>
+                </a>
+
+                <a href="https://google.com" target="_blank" class="contact-card-box animate-delay-2">
+                    <div class="icon-wrapper icon-map">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    </div>
+                    <div class="contact-card-text">
+                        <h4>Location</h4>
+                        <p>Andhra Pradesh, India</p>
+                    </div>
+                </a>
+
+                <a href="tel:+916304119748" class="contact-card-box animate-delay-3">
+                    <div class="icon-wrapper icon-phone">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    </div>
+                    <div class="contact-card-text">
+                        <h4>Call / Text</h4>
+                        <p>+91 6304119748</p>
+                    </div>
+                </a>
+            </div>
         </div>
     </section>
 
+    <!-- FOOTER STRIP -->
     <footer>
-        <p>&copy; 2026 Pachipala Venkata Vyshnavi. All rights reserved.</p>
+        <p>&copy; 2026 Pachipala Venkata Vyshnavi. All Rights Reserved.</p>
     </footer>
+
 </body>
 </html>
